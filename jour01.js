@@ -50,10 +50,11 @@ console.log(basicDown, basicUp);
 
 // 07 - Split //
 
-var world;
-world = "banana";
+var word = "banana";
 
-var letters = ["w", "o", "r", "l", "d"];
+var letters = word.split("");
+
+console.log(letters);
 
 // 08 - Template //
 

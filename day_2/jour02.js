@@ -85,7 +85,7 @@ var max = 6;
 
 var random = Math.floor(Math.random() * (max - min + 1) + min);
 
-console.log(Math.random());
+console.log(random);
  
 if (random >= 6) {
     console.log("Yes I win !")
@@ -139,4 +139,16 @@ switch (month) {
 // Bonus 03 //
 
 var roundedNumber = 3.6;
+
+/* var rounded = Math.round(3.6)
+
+console.log(rounded)
+ */
+
+if (roundedNumber % 1 >= 0.5) {
+    console.log(Math.floor(roundedNumber));
+} else {
+    console.log(Math.ceil(roundedNumber));
+}
+
 

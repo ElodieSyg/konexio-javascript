@@ -3,15 +3,13 @@ console.log("Hello World !");
 
 
 // 02 - String //
-var test;
-test = "My name is Elodie";
+var test = "My name is Elodie";
 
 console.log(test)
 
 // 03 - Concatenation //
 
-var name;
-name = "Elodie";
+var name = "Elodie";
 
 console.log("Nice to meet you" + " " + name)
 
@@ -20,17 +18,14 @@ console.log("Nice to meet you" + " " + name)
 
 // 04 - String Length //
 
-var testLength;
-testLength = "I'm very long !";
+var testLength = "I'm very long !";
 
 console.log(test.length);
 
 // 05 - Replace //
 
-var food;
-food = "croissant is meh";
-
 var food = "croissant is meh";
+
 food = food.replace("meh", "so good");
 
 console.log(food);
@@ -39,8 +34,8 @@ console.log(food);
 
 var basic = "This is Cool";
 
-basicDown = basic.toLowerCase()
-basicUp = basic.toUpperCase()
+var basicDown = basic.toLowerCase();
+var basicUp = basic.toUpperCase();
 
 /* console.log(basic);
 console.log(basicUp);
@@ -51,17 +46,13 @@ console.log(basicDown, basicUp);
 // 07 - Split //
 
 var word = "banana";
-
 var letters = word.split("");
 
 console.log(letters);
 
 // 08 - Template //
 
-var age;
-age = 24;
-
-var template;
-template = "I'm years old"
+var age = 24;
+var template = "I'm years old"
 
 console.log(`I'm ${age} years old`);

@@ -138,10 +138,9 @@ switch (month) {
 
 // Bonus 03 //
 
-var roundedNumber = 3.6;
+const roundedNumber = 4830.1;
 
 /* var rounded = Math.round(3.6)
-
 console.log(rounded)
  */
 
@@ -151,4 +150,16 @@ if (roundedNumber % 1 >= 0.5) {
     console.log(Math.ceil(roundedNumber));
 }
 
+if (roundedNumber % 1 >= 0.5) {
+    const res = Math.floor(roundedNumber).toString();
+    console.log(res);
+} else {
+    const res = Math.ceil(roundedNumber).toString();
+    console.log(res)
+}
+
+// Syntaxe ternaire : première place la condition, seconde place le if et on termine par le else //
+
+const res = roundedNumber % 1 >= 0.5 ? Math.floor(roundedNumber).toString() : Math.ceil(roundedNumber).toString();
+console.log(res)
 

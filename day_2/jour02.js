@@ -78,12 +78,12 @@ if (score >= limit && password.length > 5) {
     console.log("Nothing is good");
 }
 
-// Bonus 1 //
+// Bonus 01 //
 
 var min = 1;
 var max = 6;
 
-var random = Math.ceil(Math.random() * (max - min + 1) + min);
+var random = Math.floor(Math.random() * (max - min + 1) + min);
 
 console.log(Math.random());
  
@@ -93,4 +93,50 @@ if (random >= 6) {
     console.log("So close...")
 }
 
-// Bonus 2 //
+// Bonus 02 //
+
+var month = "April";
+
+switch (month) {
+    case "January":
+            console.log("It's Winter !");
+        break;
+    case "February":
+        console.log("It's Winter !");
+        break;
+    case "March":
+        console.log("It's Winter !");
+        break;
+    case "April":
+        console.log("It's Spring !"); 
+    break;
+    case "May":
+        console.log("It's Spring !"); 
+    break;
+    case "June":
+        console.log("It's Spring !"); 
+    break;
+    case "July":
+        console.log("It's Summer !"); 
+    break;
+    case "August":
+        console.log("It's Summer !"); 
+    break;
+    case "Septembre":
+        console.log("It's Summer !"); 
+    break;
+    case "October":
+        console.log("It's Fall !"); 
+    break;
+    case "November":
+        console.log("It's Fall !"); 
+    break;
+    case "December":
+        console.log("It's Fall !"); 
+    break;
+}
+
+// Bonus 03 //
+
+var roundedNumber = 3.6;
+

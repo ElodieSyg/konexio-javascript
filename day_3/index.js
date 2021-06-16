@@ -1,4 +1,4 @@
-/*      // 01 - Array //
+    // 01 - Array //
 
 var fruits = ["mango", "lemon", "blueberry"];
 console.log(fruits);
@@ -63,8 +63,8 @@ for (var i = 12; i >= 0; i--) {
 }
 
 console.log(reverseSentence);
- */
-    // Bonus //
+
+    //01 - Bonus //
 
 var start = 0;
 var end = 100;
@@ -83,3 +83,22 @@ for (var i = 0; i <= end; i ++) {
     }
 } 
 
+    // 02 - Bonus //
+
+var total = 0;
+var limit = 10;
+var i = 1;
+
+while (i <= limit) {
+    total = total + i;
+    i++;
+}
+
+console.log(total);
+
+    // 03 - Bonus //
+
+var promo = ["Eliott", "Julien", "Anthony", "Laura", "Elisabeth", "Baydir", "Amadou", "Kévin", "Victor", "Andy", "Ange", "Artha", "Emran", "Yangchen", "Rahmad", "Amar", "Asaad"];
+
+const random = Math.random(promo);
+console.log(random);vneosf$espjôj

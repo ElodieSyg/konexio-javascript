@@ -1,4 +1,4 @@
-    // 01 - Array //
+/*      // 01 - Array //
 
 var fruits = ["mango", "lemon", "blueberry"];
 console.log(fruits);
@@ -50,19 +50,36 @@ var limit = 10;
 
 // i++ = i + 1
 for (var i = 0; i <= limit; i++) {
-    console.log(i);
-    total++
-}
-
-console.log(total);
-
-
-
-    // 06 - Reverse //
+    total = total + i;
+    console.log(total);}
+ 
+     // 06 - Reverse //
 
 var sentence = "Hello Konexio";
-var length = sentence.length;
+var reverseSentence = "";
 
-for (var i = sentence.length; i >= 0; i--) {
-    console.log(i);
+for (var i = 12; i >= 0; i--) {
+    reverseSentence = reverseSentence + sentence[i];
 }
+
+console.log(reverseSentence);
+ */
+    // Bonus //
+
+var start = 0;
+var end = 100;
+
+for (var i = 0; i <= end; i ++) {
+    if ( i % 3 === 0 ) {
+        console.log("Fizz");
+    } if ( i % 5 === 0 ) {
+        console.log("Buzz");
+    } if ( i % 3 === 0 && i % 5 == 0 ) {
+        console.log("Fizzbuzz");
+    } if ( i % 7 === 0) {
+        console.log("")
+    } else {
+        console.log(i);
+    }
+} 
+

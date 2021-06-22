@@ -4,7 +4,7 @@ const argv1 = process.argv[2];
 const argv2 = process.argv[3];
 const argv3 = process.argv[4];
 
-function calculate (num, num1, operator) {
+const calculate = (num, num1, operator) => {
     let res = 0;
 
     switch (operator) {
@@ -32,6 +32,3 @@ function calculate (num, num1, operator) {
 
 const result = calculate(argv1, argv2, argv3);
 console.log(result);
-
-// 02 - Table //
-

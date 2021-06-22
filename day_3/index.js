@@ -1,4 +1,4 @@
-    // 01 - Array //
+/*     // 01 - Array //
 
 var fruits = ["mango", "lemon", "blueberry"];
 console.log(fruits);
@@ -63,28 +63,28 @@ for (var i = 12; i >= 0; i--) {
 }
 
 console.log(reverseSentence);
-
+ */
     //01 - Bonus //
 
 var start = 0;
 var end = 100;
 
 for (var i = 0; i <= end; i ++) {
-    if ( i % 3 === 0 ) {
-        console.log("Fizz");
-    } if ( i % 5 === 0 ) {
-        console.log("Buzz");
-    } if ( i % 3 === 0 && i % 5 == 0 ) {
-        console.log("Fizzbuzz");
-    } if ( i % 7 === 0) {
-        console.log("")
+} if ( i % 3 === 0 && i % 5 == 0 ) {
+    console.log("Fizzbuzz", i);
+    } else if ( i % 3 === 0 ) {
+        console.log("Fizz", i);
+    } else if ( i % 5 === 0 ) {
+        console.log("Buzz", i);
+    } else if ( i % 7 === 0) {
+        console.log(i)
     } else {
         console.log(i);
     }
 } 
 
     // 02 - Bonus //
-
+/* 
 var total = 0;
 var limit = 10;
 var i = 1;
@@ -101,4 +101,4 @@ console.log(total);
 var promo = ["Eliott", "Julien", "Anthony", "Laura", "Elisabeth", "Baydir", "Amadou", "Kévin", "Victor", "Andy", "Ange", "Artha", "Emran", "Yangchen", "Rahmad", "Amar", "Asaad"];
 
 const random = Math.random(promo);
-console.log(random);vneosf$espjôj
+console.log(random);vneosf$espjôj */

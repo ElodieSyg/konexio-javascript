@@ -134,32 +134,37 @@ switch (month) {
     case "December":
         console.log("It's Fall !"); 
     break;
+    default:
+        console.log("That's not a month...")
 }
 
 // Bonus 03 //
 
-const roundedNumber = 4830.1;
-
-/* var rounded = Math.round(3.6)
-console.log(rounded)
- */
+const roundedNumber = 3.6;
 
 if (roundedNumber % 1 >= 0.5) {
     console.log(Math.floor(roundedNumber));
 } else {
     console.log(Math.ceil(roundedNumber));
 }
+ 
+/* méthode Split
+const roundedStr = roundedNumber.toString().split(".")[1];
+console.log(roundedStr) 
+ */
 
-if (roundedNumber % 1 >= 0.5) {
-    const res = Math.floor(roundedNumber).toString();
-    console.log(res);
+/* méthode Substring */
+const roundedStr = roundedNumber.toString().substring(roundedStr.indexOf("."))
+console.log(roundedStr)
+
+var decimale = roundedStr.substring(str)
+console.log(decimale);
+
+if ( decimale >= 0.5 ) {
+    console.log(Math.ceil(roundedNumber))
 } else {
-    const res = Math.ceil(roundedNumber).toString();
-    console.log(res)
+    console.log(Math.floor(roundedNumber))
 }
 
-// Syntaxe ternaire : première place la condition, seconde place le if et on termine par le else //
-
-const res = roundedNumber % 1 >= 0.5 ? Math.floor(roundedNumber).toString() : Math.ceil(roundedNumber).toString();
-console.log(res)
+ 
 

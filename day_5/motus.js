@@ -7,7 +7,7 @@ prompt.start();
 
 function onErr(err) {
     console.log("It's lose...".red);
-    return;
+    return;   
 }
 
 function compare (mystere, result) {
@@ -25,6 +25,7 @@ return(index);
 
 const play = () => {
     let mysteryWord = "motus";
+    let result = "";
     let limit = 6;
 
     console.log("Find the wold. This word contains 5 letters :)".blue)
@@ -37,14 +38,16 @@ const play = () => {
         if (res.word.length !== mysteryWord.length) {
             return onErr(err);
         }
-
+        
+        let tmp = "";
         for ( var i = 0; i <= 6; i++) {
             if (mysteryWord[i] === res.word[i]) {
-                console.log(res.word[i]);
+                 tmp = tmp.concat(mysteryWord[i]);
             } else {
-                 console.log((res.word[i]).yellow);
+                console.log((res.word[i]).yellow);
             }
         }
+        console.log("Result: "+ tmp + " end!");
     });
 }
 

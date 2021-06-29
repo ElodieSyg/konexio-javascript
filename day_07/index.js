@@ -92,4 +92,5 @@ let soldOut = chocoCake.map(cake => {
     return cake;
 });
 
-console.log(soldOut);
+//console.log(soldOut);
+
